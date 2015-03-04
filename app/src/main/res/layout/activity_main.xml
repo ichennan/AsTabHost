@@ -3,31 +3,31 @@
     android:layout_height="fill_parent" tools:context=".MainActivity"
     android:id="@+id/tabHost1">
 
-    <LinerLayout android:id="@+id/linearLayout01"
+    <LinearLayout android:id="@+id/linearLayout01"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
-        <TextView>
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="111"/>
-           </TextView>>
-    </LinerLayout>
+    </LinearLayout>
 
-    <LinerLayout android:id="@+id/linearLayout02"
+    <LinearLayout android:id="@+id/linearLayout02"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
-        <TextView>
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="222"/>
-        </TextView>>
-    </LinerLayout>
+    </LinearLayout>
 
-    <LinerLayout android:id="@+id/linearLayout03"
+    <LinearLayout android:id="@+id/linearLayout03"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
-        <TextView>
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="333"/>
-        </TextView>>
-    </LinerLayout>
+    </LinearLayout>
 
 </FrameLayout>

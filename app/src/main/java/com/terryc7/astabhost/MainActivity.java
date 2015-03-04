@@ -9,28 +9,32 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
 
-
-public class MainActivity extends FragmentActivity {
+@SuppressWarnings("deprecation")
+public class MainActivity extends TabActivity {
     private TabHost myTabHost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        myTabHost = (TabHost)findViewById(android.R.id.tabhost);
-        myTabHost.setup();
+//        myTabHost = (TabHost)findViewById(android.R.id.tabhost);
+//        myTabHost.setup();
+        myTabHost = this.getTabHost();
 
         LayoutInflater.from(this).inflate(R.layout.activity_main, myTabHost.getTabContentView(), true);
 
         myTabHost.addTab(
                 myTabHost.newTabSpec("1st")
+                        .setIndicator("11st", getResources().getDrawable(R.mipmap.ic_launcher))
                         .setContent(R.id.linearLayout01)
         );
         myTabHost.addTab(
                 myTabHost.newTabSpec("2nd")
+                        .setIndicator("11st", getResources().getDrawable(R.mipmap.ic_launcher))
                         .setContent(R.id.linearLayout02)
         );
         myTabHost.addTab(
                 myTabHost.newTabSpec("3rd")
+                        .setIndicator("11st", getResources().getDrawable(R.mipmap.ic_launcher))
                         .setContent(R.id.linearLayout03)
         );
     }
